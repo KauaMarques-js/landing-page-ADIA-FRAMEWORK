@@ -1,6 +1,7 @@
 "use client";
 
 import { useNavigation } from "@/hooks/use-navigation";
+import { ThemeToggle } from "@/components/interactive/theme-toggle";
 
 export function SiteHeader() {
   const {
@@ -80,6 +81,7 @@ export function SiteHeader() {
           </ul>
         </nav>
         <div className="header-actions">
+          <ThemeToggle />
           <a className="btn btn-dark btn-small" href="#contato">
             Vamos conversar <span aria-hidden="true">↗</span>
           </a>
